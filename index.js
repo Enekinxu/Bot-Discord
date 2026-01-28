@@ -13,8 +13,8 @@ client.on("ready", () => {
 });
 
 client.on("messageCreate", (message) => {
-    if (message.content === "ping") {
-        message.reply("Pong!");
+    if (message.content === "!hola") {
+        message.reply("Hola, Bienvenido a BloqueMágico");
     }
 });
 
