@@ -14,7 +14,7 @@ client.on("ready", () => {
 
 client.on("messageCreate", (message) => {
     if (message.content === "!hola") {
-        message.reply("Hola, Bienvenido a BloqueMágico");
+        message.reply("¡Hola, Bienvenido a BloqueMágico!");
     }
 });
 
