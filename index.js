@@ -10,7 +10,7 @@ const client = new Client({
 });
 
 // ID del canal donde quieres enviar la bienvenida
-const WELCOME_CHANNEL_ID = "ID_DEL_CANAL";
+const WELCOME_CHANNEL_ID = "1432426724599271464";
 
 client.on("ready", () => {
     console.log(`Bot encendido como ${client.user.tag}`);
