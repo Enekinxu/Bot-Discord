@@ -19,29 +19,3 @@ client.on("messageCreate", (message) => {
 });
 
 client.login(process.env.TOKEN);
-
-const { Client, GatewayIntentBits } = require("discord.js");
-
-    intents: [
-        GatewayIntentBits.Guilds,
-        GatewayIntentBits.GuildMembers,
-        GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.MessageContent
-    ]
-
-
-// ID del canal donde quieres enviar la bienvenida
-const WELCOME_CHANNEL_ID = "1432426724599271464";
-
-client.on("ready", () => {
-    console.log(`Bot encendido como ${client.user.tag}`);
-});
-
-client.on("guildMemberAdd", (member) => {
-    const channel = member.guild.channels.cache.get(WELCOME_CHANNEL_ID);
-    if (!channel) return;
-
-    channel.send(`🎉 ¡Bienvenido/a **${member.user.username}** a **${member.guild.name}**!`);
-});
-
-client.login(process.env.TOKEN);
