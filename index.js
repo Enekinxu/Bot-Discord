@@ -21,7 +21,7 @@ client.on("guildMemberAdd", (member) => {
     const channel = member.guild.channels.cache.get(WELCOME_CHANNEL_ID);
     if (!channel) return;
 
-    channel.send(`¡Bienvenid@ ${member}! Ahora somos ${total} miembros** en **${member.guild.name}**.`);
+    channel.send(`¡Bienvenid@ **${member}** a **${member.guild.name}**!`);
 });
 
 // Comando !hola
